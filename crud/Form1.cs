@@ -48,7 +48,7 @@ namespace crud
             else if (cmbtablas.Text == ("Cargo"))
             {
                 operaciones oper = new operaciones();
-                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtbuscar.Text + " from  cargo '" + txtcondiocional.Text +"'");
+                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtbuscar.Text + "  from  cargo " +txtcondiocional.Text + "");
 
             }
 
@@ -78,9 +78,24 @@ namespace crud
 
         private void button2_Click(object sender, EventArgs e)
         {
-            operaciones oper = new operaciones();
-            dgvdatos.DataSource = oper.cosnsultaconresultado("select * from  empleado ");
+            if (cmbtablas.Text == "Empleado")
+            {
+                operaciones oper = new operaciones();
+                dgvdatos.DataSource = oper.cosnsultaconresultado("select * from  empleado ");
+            }
 
+            else if(cmbtablas.Text == "Cargo")
+            {
+                operaciones oper = new operaciones();
+                dgvdatos.DataSource = oper.cosnsultaconresultado("select * from  cargo ");
+
+            }
+
+            else if(cmbtablas.Text == "Detalles Nomina")
+            {
+                operaciones oper = new operaciones();
+                dgvdatos.DataSource = oper.cosnsultaconresultado("select * from  detalle_nomina ");
+            }
 
         }
     }
