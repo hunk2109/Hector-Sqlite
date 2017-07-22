@@ -98,5 +98,10 @@ namespace crud
             }
 
         }
+
+        private void cmbtablas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

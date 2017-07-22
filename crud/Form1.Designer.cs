@@ -105,6 +105,7 @@
             this.cmbtablas.Name = "cmbtablas";
             this.cmbtablas.Size = new System.Drawing.Size(121, 21);
             this.cmbtablas.TabIndex = 5;
+            this.cmbtablas.SelectedIndexChanged += new System.EventHandler(this.cmbtablas_SelectedIndexChanged);
             // 
             // txtcondiocional
             // 
