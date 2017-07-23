@@ -39,24 +39,35 @@ namespace crud
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
-            if (cmbtablas.Text == ("Empleado"))
+            if (rdbid.Checked == true)
             {
                 operaciones oper = new operaciones();
-                dgvdatos.DataSource = oper.cosnsultaconresultado("select "+txtcondiocional.Text+"  from  empleado where nombre = '" + txtbuscar.Text + "'");
+                dgvdatos.DataSource = oper.cosnsultaconresultado("select "+txtcondiocional.Text+"  from  empleado where empleado_id = '" + txtbuscar.Text + "'");
             }
 
-            else if (cmbtablas.Text == ("Cargo"))
+            else if(rdbnombre.Checked == true)
             {
                 operaciones oper = new operaciones();
-                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtbuscar.Text + "  from  cargo " +txtcondiocional.Text + "");
-
+                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where nombre = '" + txtbuscar.Text + "'");
             }
-
-            else if (cmbtablas.Text == ("Detalles Nomina"))
+            else if(rdbapellido.Checked == true)
             {
                 operaciones oper = new operaciones();
-                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtbuscar.Text+  "from  detalle_nomina " + txtcondiocional.Text + "");
+                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where apellido = '" + txtbuscar.Text + "'");
             }
+
+            else if(rdbcedula.Checked == true)
+            {
+                operaciones oper = new operaciones();
+                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where cedula = '" + txtbuscar.Text + "'");
+            }
+
+            else if(rdbsexo.Checked == true)
+            {
+                operaciones oper = new operaciones();
+                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where sexo = '" + txtbuscar.Text + "'");
+            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -100,6 +111,11 @@ namespace crud
         }
 
         private void cmbtablas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdbid_CheckedChanged(object sender, EventArgs e)
         {
 
         }
