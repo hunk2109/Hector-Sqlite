@@ -63,7 +63,7 @@
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(532, 12);
+            this.txtbuscar.Location = new System.Drawing.Point(532, 9);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(181, 20);
             this.txtbuscar.TabIndex = 1;
@@ -71,7 +71,7 @@
             // 
             // btnbuscar
             // 
-            this.btnbuscar.Location = new System.Drawing.Point(719, 11);
+            this.btnbuscar.Location = new System.Drawing.Point(719, 7);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(75, 23);
             this.btnbuscar.TabIndex = 2;
@@ -147,7 +147,7 @@
             // rdbid
             // 
             this.rdbid.AutoSize = true;
-            this.rdbid.Location = new System.Drawing.Point(118, 19);
+            this.rdbid.Location = new System.Drawing.Point(81, 14);
             this.rdbid.Name = "rdbid";
             this.rdbid.Size = new System.Drawing.Size(36, 17);
             this.rdbid.TabIndex = 9;
@@ -159,7 +159,7 @@
             // rdbnombre
             // 
             this.rdbnombre.AutoSize = true;
-            this.rdbnombre.Location = new System.Drawing.Point(160, 19);
+            this.rdbnombre.Location = new System.Drawing.Point(123, 14);
             this.rdbnombre.Name = "rdbnombre";
             this.rdbnombre.Size = new System.Drawing.Size(62, 17);
             this.rdbnombre.TabIndex = 10;
@@ -170,7 +170,7 @@
             // rdbapellido
             // 
             this.rdbapellido.AutoSize = true;
-            this.rdbapellido.Location = new System.Drawing.Point(228, 19);
+            this.rdbapellido.Location = new System.Drawing.Point(191, 14);
             this.rdbapellido.Name = "rdbapellido";
             this.rdbapellido.Size = new System.Drawing.Size(62, 17);
             this.rdbapellido.TabIndex = 11;
@@ -181,7 +181,7 @@
             // rdbcedula
             // 
             this.rdbcedula.AutoSize = true;
-            this.rdbcedula.Location = new System.Drawing.Point(296, 19);
+            this.rdbcedula.Location = new System.Drawing.Point(259, 14);
             this.rdbcedula.Name = "rdbcedula";
             this.rdbcedula.Size = new System.Drawing.Size(58, 17);
             this.rdbcedula.TabIndex = 12;
@@ -192,7 +192,7 @@
             // rdbsexo
             // 
             this.rdbsexo.AutoSize = true;
-            this.rdbsexo.Location = new System.Drawing.Point(361, 19);
+            this.rdbsexo.Location = new System.Drawing.Point(323, 14);
             this.rdbsexo.Name = "rdbsexo";
             this.rdbsexo.Size = new System.Drawing.Size(49, 17);
             this.rdbsexo.TabIndex = 13;
@@ -203,7 +203,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 16);
+            this.label2.Location = new System.Drawing.Point(12, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 26);
             this.label2.TabIndex = 14;
