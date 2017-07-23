@@ -36,12 +36,15 @@
             this.cmbtablas = new System.Windows.Forms.ComboBox();
             this.txtcondiocional = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnmostrar = new System.Windows.Forms.Button();
             this.rdbid = new System.Windows.Forms.RadioButton();
             this.rdbnombre = new System.Windows.Forms.RadioButton();
             this.rdbapellido = new System.Windows.Forms.RadioButton();
             this.rdbcedula = new System.Windows.Forms.RadioButton();
             this.rdbsexo = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,7 +82,7 @@
             // btncrear
             // 
             this.btncrear.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btncrear.Location = new System.Drawing.Point(618, 397);
+            this.btncrear.Location = new System.Drawing.Point(590, 397);
             this.btncrear.Name = "btncrear";
             this.btncrear.Size = new System.Drawing.Size(75, 23);
             this.btncrear.TabIndex = 3;
@@ -107,7 +110,7 @@
             "Empleado",
             "Cargo",
             "Detalles Nomina"});
-            this.cmbtablas.Location = new System.Drawing.Point(699, 397);
+            this.cmbtablas.Location = new System.Drawing.Point(673, 397);
             this.cmbtablas.Name = "cmbtablas";
             this.cmbtablas.Size = new System.Drawing.Size(121, 21);
             this.cmbtablas.TabIndex = 5;
@@ -124,21 +127,22 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(573, 402);
+            this.label1.Location = new System.Drawing.Point(545, 402);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Tablas";
             // 
-            // button2
+            // btnmostrar
             // 
-            this.button2.Location = new System.Drawing.Point(12, 16);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Mostrar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnmostrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnmostrar.Location = new System.Drawing.Point(800, 397);
+            this.btnmostrar.Name = "btnmostrar";
+            this.btnmostrar.Size = new System.Drawing.Size(75, 23);
+            this.btnmostrar.TabIndex = 8;
+            this.btnmostrar.Text = "Mostrar";
+            this.btnmostrar.UseVisualStyleBackColor = true;
+            this.btnmostrar.Click += new System.EventHandler(this.button2_Click);
             // 
             // rdbid
             // 
@@ -196,18 +200,47 @@
             this.rdbsexo.Text = "Sexo";
             this.rdbsexo.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(55, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 26);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Selecione \r\nun campo";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(596, 50);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(613, 37);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 26);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Lo que quiere \r\nmostrar";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(891, 460);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.rdbsexo);
             this.Controls.Add(this.rdbcedula);
             this.Controls.Add(this.rdbapellido);
             this.Controls.Add(this.rdbnombre);
             this.Controls.Add(this.rdbid);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnmostrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtcondiocional);
             this.Controls.Add(this.cmbtablas);
@@ -235,12 +268,15 @@
         private System.Windows.Forms.ComboBox cmbtablas;
         private System.Windows.Forms.TextBox txtcondiocional;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnmostrar;
         private System.Windows.Forms.RadioButton rdbid;
         private System.Windows.Forms.RadioButton rdbnombre;
         private System.Windows.Forms.RadioButton rdbapellido;
         private System.Windows.Forms.RadioButton rdbcedula;
         private System.Windows.Forms.RadioButton rdbsexo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
