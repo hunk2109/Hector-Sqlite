@@ -118,7 +118,7 @@
             // 
             // txtcondiocional
             // 
-            this.txtcondiocional.Location = new System.Drawing.Point(610, 40);
+            this.txtcondiocional.Location = new System.Drawing.Point(719, 40);
             this.txtcondiocional.Name = "txtcondiocional";
             this.txtcondiocional.Size = new System.Drawing.Size(100, 20);
             this.txtcondiocional.TabIndex = 6;
@@ -220,7 +220,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(529, 37);
+            this.label4.Location = new System.Drawing.Point(638, 37);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 26);
             this.label4.TabIndex = 16;
