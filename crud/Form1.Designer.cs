@@ -205,9 +205,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(55, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 26);
+            this.label2.Size = new System.Drawing.Size(63, 26);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Selecione \r\nun campo";
+            this.label2.Text = "Seleccione \r\nun campo";
             // 
             // label3
             // 
