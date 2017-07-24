@@ -81,7 +81,7 @@
             // 
             // btncrear
             // 
-            this.btncrear.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btncrear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btncrear.Location = new System.Drawing.Point(590, 397);
             this.btncrear.Name = "btncrear";
             this.btncrear.Size = new System.Drawing.Size(75, 23);
@@ -92,7 +92,7 @@
             // 
             // button1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1.AutoSize = true;
             this.button1.Location = new System.Drawing.Point(81, 397);
             this.button1.Name = "button1";
@@ -104,7 +104,7 @@
             // 
             // cmbtablas
             // 
-            this.cmbtablas.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.cmbtablas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbtablas.FormattingEnabled = true;
             this.cmbtablas.Items.AddRange(new object[] {
             "Empleado",
@@ -125,7 +125,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(545, 402);
             this.label1.Name = "label1";
