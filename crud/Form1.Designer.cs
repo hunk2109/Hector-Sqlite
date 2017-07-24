@@ -62,6 +62,7 @@
             // 
             // txtbuscar
             // 
+            this.txtbuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtbuscar.Location = new System.Drawing.Point(532, 9);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(181, 20);
@@ -70,6 +71,7 @@
             // 
             // btnbuscar
             // 
+            this.btnbuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnbuscar.Location = new System.Drawing.Point(719, 7);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(75, 23);
@@ -105,6 +107,7 @@
             // 
             // txtcondiocional
             // 
+            this.txtcondiocional.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtcondiocional.Location = new System.Drawing.Point(719, 40);
             this.txtcondiocional.Name = "txtcondiocional";
             this.txtcondiocional.Size = new System.Drawing.Size(100, 20);
@@ -206,6 +209,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(638, 37);
             this.label4.Name = "label4";
