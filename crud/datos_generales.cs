@@ -57,10 +57,15 @@ namespace crud
 
         private void btnedad_Click(object sender, EventArgs e)
         {
-            string resultado;
+            int naci,actual, resultado;
+            naci = int.Parse(txtnaci.Text);
+            actual = int.Parse("2017/07/28");
+            resultado = actual - naci;
+            txtcaledad.Text = resultado.ToString();
 
-            DateTime f_nacimiento = Convert.ToDateTime(txtnaci.Text);
-            DateTime f_ahora = DateTime.Now;
+            
+
+          ;
             
 
 

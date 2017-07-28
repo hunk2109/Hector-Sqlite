@@ -234,6 +234,7 @@
             // 
             // txtdgid
             // 
+            this.txtdgid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtdgid.Location = new System.Drawing.Point(118, 433);
             this.txtdgid.Name = "txtdgid";
             this.txtdgid.Size = new System.Drawing.Size(100, 20);
@@ -241,6 +242,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(94, 436);
             this.label8.Name = "label8";
