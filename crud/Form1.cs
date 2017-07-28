@@ -119,5 +119,21 @@ namespace crud
         {
 
         }
+
+        private void dgvdatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            datos_generales f = new datos_generales();
+            f.Show();
+            
+
+                
+
+        }
+
+        private void btnprueba_Click(object sender, EventArgs e)
+        {
+            datos_generales f = new datos_generales();
+            f.Show();
+        }
     }
 }

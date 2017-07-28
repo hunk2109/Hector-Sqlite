@@ -20,7 +20,7 @@ namespace crud
         private void btnguardar_Click(object sender, EventArgs e)
         {
             operaciones oper = new operaciones();
-            oper.consultasinreaultado("insert into empleado(nombre,apellido,cedula,sexo) values('"+ txtnom.Text +"','"+ textape.Text +"','"+txtcedula.Text+"','"+texsex.Text+"')");
+            oper.consultasinreaultado("insert into empleado(nombre,apellido,cedula,sexo,fecha_naci,fecha_ingr) values('"+ txtnom.Text +"','"+ textape.Text +"','"+txtcedula.Text+"','"+texsex.Text+"','"+txtnacimiento.Text+"','"+txtingreso.Text+"')");
 
         }
 
@@ -31,6 +31,9 @@ namespace crud
             textape.Text = ("");
             texsex.Text = ("");
             txtcedula.Text = ("");
+          txtnacimiento.Text = ("");
+            txtingreso.Text = ("");
+
         }
     }
 }

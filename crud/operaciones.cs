@@ -61,6 +61,7 @@ namespace crud
             try
             {
                 cnx.Open();
+                
                 SQLiteCommand cmd;
                 cmd = cnx.CreateCommand();
                 cmd.CommandText = sql;

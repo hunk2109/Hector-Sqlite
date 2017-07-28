@@ -40,6 +40,10 @@
             this.btnborrar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtcedula = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtnacimiento = new System.Windows.Forms.TextBox();
+            this.txtingreso = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -80,35 +84,35 @@
             // 
             // texid
             // 
-            this.texid.Location = new System.Drawing.Point(63, 9);
+            this.texid.Location = new System.Drawing.Point(129, 9);
             this.texid.Name = "texid";
             this.texid.Size = new System.Drawing.Size(100, 20);
             this.texid.TabIndex = 4;
             // 
             // txtnom
             // 
-            this.txtnom.Location = new System.Drawing.Point(63, 41);
+            this.txtnom.Location = new System.Drawing.Point(129, 38);
             this.txtnom.Name = "txtnom";
             this.txtnom.Size = new System.Drawing.Size(100, 20);
             this.txtnom.TabIndex = 5;
             // 
             // textape
             // 
-            this.textape.Location = new System.Drawing.Point(63, 73);
+            this.textape.Location = new System.Drawing.Point(129, 73);
             this.textape.Name = "textape";
             this.textape.Size = new System.Drawing.Size(100, 20);
             this.textape.TabIndex = 6;
             // 
             // texsex
             // 
-            this.texsex.Location = new System.Drawing.Point(63, 145);
+            this.texsex.Location = new System.Drawing.Point(129, 148);
             this.texsex.Name = "texsex";
             this.texsex.Size = new System.Drawing.Size(100, 20);
             this.texsex.TabIndex = 7;
             // 
             // btnguardar
             // 
-            this.btnguardar.Location = new System.Drawing.Point(16, 226);
+            this.btnguardar.Location = new System.Drawing.Point(12, 398);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(75, 23);
             this.btnguardar.TabIndex = 9;
@@ -118,7 +122,7 @@
             // 
             // btnborrar
             // 
-            this.btnborrar.Location = new System.Drawing.Point(197, 226);
+            this.btnborrar.Location = new System.Drawing.Point(249, 398);
             this.btnborrar.Name = "btnborrar";
             this.btnborrar.Size = new System.Drawing.Size(75, 23);
             this.btnborrar.TabIndex = 10;
@@ -137,16 +141,52 @@
             // 
             // txtcedula
             // 
-            this.txtcedula.Location = new System.Drawing.Point(63, 110);
+            this.txtcedula.Location = new System.Drawing.Point(129, 110);
             this.txtcedula.Name = "txtcedula";
             this.txtcedula.Size = new System.Drawing.Size(100, 20);
             this.txtcedula.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(16, 191);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(106, 13);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Fecha de nacimiento";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(16, 227);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(89, 13);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Fecha de ingreso";
+            // 
+            // txtnacimiento
+            // 
+            this.txtnacimiento.Location = new System.Drawing.Point(129, 183);
+            this.txtnacimiento.Name = "txtnacimiento";
+            this.txtnacimiento.Size = new System.Drawing.Size(100, 20);
+            this.txtnacimiento.TabIndex = 15;
+            // 
+            // txtingreso
+            // 
+            this.txtingreso.Location = new System.Drawing.Point(129, 219);
+            this.txtingreso.Name = "txtingreso";
+            this.txtingreso.Size = new System.Drawing.Size(100, 20);
+            this.txtingreso.TabIndex = 16;
             // 
             // frn_empleaado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(327, 433);
+            this.Controls.Add(this.txtingreso);
+            this.Controls.Add(this.txtnacimiento);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtcedula);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnborrar);
@@ -180,5 +220,9 @@
         private System.Windows.Forms.Button btnborrar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtcedula;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtnacimiento;
+        private System.Windows.Forms.TextBox txtingreso;
     }
 }

@@ -57,8 +57,10 @@
             this.dgvdatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdatos.Location = new System.Drawing.Point(12, 66);
             this.dgvdatos.Name = "dgvdatos";
+            this.dgvdatos.ReadOnly = true;
             this.dgvdatos.Size = new System.Drawing.Size(867, 303);
             this.dgvdatos.TabIndex = 0;
+            this.dgvdatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdatos_CellContentClick);
             // 
             // txtbuscar
             // 
