@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace crud
 {
-    public partial  class datos_generales : Form
+    public partial class datos_generales : Form
     {
         public datos_generales()
         {
@@ -19,15 +19,15 @@ namespace crud
 
         public void button1_Click(object sender, EventArgs e)
         {
-           
+
             operaciones oper = new operaciones();
-            DataTable dgvdatos = oper.cosnsultaconresultado("select * from empleado inner join cargo where empleado_id = '"+txtdgid.Text+"' and Empleado_empleado_id = '"+txtdgid.Text+"'");
-           
+            DataTable dgvdatos = oper.cosnsultaconresultado("select * from empleado inner join cargo where empleado_id = '" + txtdgid.Text + "' and Empleado_empleado_id = '" + txtdgid.Text + "'");
+
             foreach (DataRow dr in dgvdatos.Rows)
 
             {
-                
-                string nombre,apellido,sexo,cargo, fecha_nac,fecha_ingre,salario;
+
+                string nombre, apellido, sexo, cargo, fecha_nac, fecha_ingre, salario;
                 nombre = dr["nombre"].ToString();
                 txtdatosnombre.Text = nombre;
                 apellido = dr["apellido"].ToString();
@@ -45,10 +45,10 @@ namespace crud
 
                 try
                 {
-                    pictureBox1.Image = Image.FromFile(@"C:\bdd\" + txtapellidod.Text+".jpg");
+                    pictureBox1.Image = Image.FromFile(@"C:\bdd\" + txtapellidod.Text + ".jpg");
                 }
 
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
@@ -57,19 +57,18 @@ namespace crud
 
         private void btnedad_Click(object sender, EventArgs e)
         {
-            int naci,actual, resultado;
-            naci = int.Parse(txtnaci.Text);
-            actual = int.Parse("2017/07/28");
-            resultado = actual - naci;
-            txtcaledad.Text = resultado.ToString();
+            try
+            {
+                DateTime da = DateTime.Now;
+                DateTime db = new DateTime(Convert.ToInt32(txtnaci.Text.ToString()));
+                txtcaledad.Text = (da.Year - db.Year).ToString();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
-            
 
-          ;
-            
-
-
-            
         }
 
         private void datos_generales_Load(object sender, EventArgs e)

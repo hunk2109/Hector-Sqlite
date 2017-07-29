@@ -31,7 +31,7 @@ namespace crud
             textape.Text = ("");
             texsex.Text = ("");
             txtcedula.Text = ("");
-          txtnacimiento.Text = ("");
+            txtnacimiento.Text = ("");
             txtingreso.Text = ("");
 
         }
