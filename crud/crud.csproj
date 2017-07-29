@@ -63,6 +63,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cabecera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cabecera.Designer.cs">
+      <DependentUpon>cabecera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cabeceraactuali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cabeceraactuali.Designer.cs">
+      <DependentUpon>cabeceraactuali.cs</DependentUpon>
+    </Compile>
     <Compile Include="datos_generales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +109,12 @@
     <Compile Include="operaciones.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="cabecera.resx">
+      <DependentUpon>cabecera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cabeceraactuali.resx">
+      <DependentUpon>cabeceraactuali.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="datos_generales.resx">
       <DependentUpon>datos_generales.cs</DependentUpon>
     </EmbeddedResource>

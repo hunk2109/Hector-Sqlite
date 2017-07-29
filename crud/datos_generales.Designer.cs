@@ -196,6 +196,7 @@
             this.btnantig.TabIndex = 15;
             this.btnantig.Text = "Calcular antiguedad";
             this.btnantig.UseVisualStyleBackColor = true;
+            this.btnantig.Click += new System.EventHandler(this.btnantig_Click);
             // 
             // txtantiguedad
             // 

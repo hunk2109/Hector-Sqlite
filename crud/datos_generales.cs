@@ -59,9 +59,11 @@ namespace crud
         {
             try
             {
-                DateTime da = DateTime.Now;
-                DateTime db = new DateTime(Convert.ToInt32(txtnaci.Text.ToString()));
-                txtcaledad.Text = (da.Year - db.Year).ToString();
+                string i = txtnaci.Text;
+                DateTime x = Convert.ToDateTime(i);
+                int edad = DateTime.Today.AddTicks(-x.Ticks).Year - 1;
+                txtcaledad.Text = Convert.ToString(edad);
+                edad.ToString();
             }
             catch(Exception ex)
             {
@@ -74,6 +76,23 @@ namespace crud
         private void datos_generales_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnantig_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string i = txtingre.Text;
+                DateTime x = Convert.ToDateTime(i);
+                int ingreso = DateTime.Today.AddTicks(-x.Ticks).Year - 1;
+                txtantiguedad.Text = Convert.ToString(ingreso);
+                ingreso.ToString();
+            }
+
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

@@ -35,6 +35,12 @@ namespace crud
                 nomina f = new nomina();
                 f.Show();
             }
+
+            else if(cmbtablas.Text == ("Cabecera Nomina"))
+            {
+                cabecera f = new cabecera();
+                f.Show();
+            }
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
@@ -108,6 +114,13 @@ namespace crud
                 dgvdatos.DataSource = oper.cosnsultaconresultado("select * from  detalle_nomina ");
             }
 
+            else if(cmbtablas.Text == "Cabecera Nomina")
+            {
+                operaciones oper = new operaciones();
+                dgvdatos.DataSource = oper.cosnsultaconresultado("select * from  cabecera_nomina ");
+
+            }
+
         }
 
         private void cmbtablas_SelectedIndexChanged(object sender, EventArgs e)
@@ -122,8 +135,18 @@ namespace crud
 
         private void dgvdatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            datos_generales f = new datos_generales();
-            f.Show();
+            if (cmbtablas.Text == "Empleado")
+            {
+                datos_generales f = new datos_generales();
+                f.Show();
+            }
+
+            else if( cmbtablas.Text == "Cabecera Nomina")
+            {
+                cabeceraactuali f = new cabeceraactuali();
+                f.Show();
+
+            }
             
 
                 

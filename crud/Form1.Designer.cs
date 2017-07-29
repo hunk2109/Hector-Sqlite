@@ -100,7 +100,8 @@
             this.cmbtablas.Items.AddRange(new object[] {
             "Empleado",
             "Cargo",
-            "Detalles Nomina"});
+            "Detalles Nomina",
+            "Cabecera Nomina"});
             this.cmbtablas.Location = new System.Drawing.Point(673, 397);
             this.cmbtablas.Name = "cmbtablas";
             this.cmbtablas.Size = new System.Drawing.Size(121, 21);
