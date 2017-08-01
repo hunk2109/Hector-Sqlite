@@ -152,9 +152,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Location = new System.Drawing.Point(449, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(387, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(436, 239);
+            this.pictureBox1.Size = new System.Drawing.Size(498, 273);
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
@@ -162,7 +162,7 @@
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(357, 266);
+            this.label6.Location = new System.Drawing.Point(356, 288);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 13);
             this.label6.TabIndex = 12;
@@ -171,7 +171,7 @@
             // txtsalario
             // 
             this.txtsalario.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.txtsalario.Location = new System.Drawing.Point(331, 282);
+            this.txtsalario.Location = new System.Drawing.Point(331, 304);
             this.txtsalario.Name = "txtsalario";
             this.txtsalario.ReadOnly = true;
             this.txtsalario.Size = new System.Drawing.Size(100, 20);
