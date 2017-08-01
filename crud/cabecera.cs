@@ -24,7 +24,7 @@ namespace crud
             DateTime x = Convert.ToDateTime(i);
             DateTime y = Convert.ToDateTime(f);
             operaciones oper = new operaciones();
-            oper.consultasinreaultado("insert into cabecera_nomina(nombre_empresa,tipo_nomina,fecha_inicio,fecha_final) values('"+txtnombreemp.Text+"','"+txttipono.Text+"','"+x.Ticks+"','"+y.Ticks+"')");
+            oper.consultasinreaultado("insert into cabecera_nomina(nomina_id,nombre_empresa,tipo_nomina,fecha_inicio,fecha_final) values('"+txtnid.Text+"','"+txtnombreemp.Text+"','"+txttipono.Text+"','"+txtfini+"','"+txtffinal+"')");
 
         }
     }

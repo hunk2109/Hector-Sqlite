@@ -68,5 +68,33 @@ namespace crud
             txtdetallesid.Text = ("");
                
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int sueldo;
+                double opereacionisr, operacionss,operacionesotros,texisr,texss,texotros,totalope,suelneto;
+                sueldo = Convert.ToInt32(txtsueldo.Text);
+                opereacionisr = sueldo * 0.12;
+                operacionss = sueldo * 0.04;
+                operacionesotros = sueldo * 0.02;
+                txtisr.Text = opereacionisr.ToString();
+                txtdeducionss.Text = operacionss.ToString();
+                txtotros.Text = operacionesotros.ToString();
+                texisr = Convert.ToInt32(txtisr.Text);
+                texss = Convert.ToInt32(txtdeducionss.Text);
+                texotros = Convert.ToInt32(txtotros.Text);
+                totalope = texisr + texss + texotros;
+                txtdeducciontt.Text = totalope.ToString();
+                suelneto = sueldo - totalope;
+                txtsueldoneto.Text = suelneto.ToString();
+                    
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

@@ -47,6 +47,9 @@
             this.txtfechanomina = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtdetallesid = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtsueldo = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -159,7 +162,7 @@
             // btnguarnomina
             // 
             this.btnguarnomina.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnguarnomina.Location = new System.Drawing.Point(12, 428);
+            this.btnguarnomina.Location = new System.Drawing.Point(47, 428);
             this.btnguarnomina.Name = "btnguarnomina";
             this.btnguarnomina.Size = new System.Drawing.Size(75, 23);
             this.btnguarnomina.TabIndex = 14;
@@ -170,7 +173,7 @@
             // btnborrar
             // 
             this.btnborrar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnborrar.Location = new System.Drawing.Point(617, 428);
+            this.btnborrar.Location = new System.Drawing.Point(652, 428);
             this.btnborrar.Name = "btnborrar";
             this.btnborrar.Size = new System.Drawing.Size(75, 23);
             this.btnborrar.TabIndex = 15;
@@ -210,11 +213,40 @@
             this.txtdetallesid.Size = new System.Drawing.Size(100, 20);
             this.txtdetallesid.TabIndex = 19;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(617, 26);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(67, 35);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Calcular \r\nnomina";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtsueldo
+            // 
+            this.txtsueldo.Location = new System.Drawing.Point(490, 26);
+            this.txtsueldo.Name = "txtsueldo";
+            this.txtsueldo.Size = new System.Drawing.Size(100, 20);
+            this.txtsueldo.TabIndex = 21;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(382, 29);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(102, 13);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Introdusca el sueldo";
+            // 
             // nomina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 463);
+            this.ClientSize = new System.Drawing.Size(774, 463);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txtsueldo);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtdetallesid);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtfechanomina);
@@ -263,5 +295,8 @@
         private System.Windows.Forms.TextBox txtfechanomina;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtdetallesid;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtsueldo;
+        private System.Windows.Forms.Label label10;
     }
 }
