@@ -28,7 +28,7 @@ namespace crud
             DataTable dgvdatos = oper.cosnsultaconresultado("select * from detalle_nomina inner join cabecera_nomina,cargo where detalle_id = '"+txtidcn.Text+"' and nomina_id = '"+txtidcn.Text+"' and cargo_id = '"+txtidcn.Text+"' ");
             foreach(DataRow dr in dgvdatos.Rows)
             {
-                string idnomina,isr,tnomina,fecha_i,fecha_f,isrc,ddss,s_neto,t_otros,t_dedu,sueld;
+                string idnomina,isr,tnomina,fecha_i,fecha_f,isrc,ddss,s_neto,t_otros,t_dedu,sueld,empl_id;
                 idnomina = dr["nomina_id"].ToString();
                 txtidn.Text = idnomina;
                 isr = dr["nombre_empresa"].ToString();
@@ -51,9 +51,16 @@ namespace crud
                 txttdeducc.Text = t_dedu;
                 sueld = dr["sueldo"].ToString();
                 txtsueldo.Text = sueld;
+                empl_id = dr["Empleado_empleado_id"].ToString();
+                txtidempc.Text = empl_id;
 
 
             }
+        }
+
+        private void cabeceraactuali_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

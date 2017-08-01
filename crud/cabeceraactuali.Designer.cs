@@ -53,6 +53,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtidcn = new System.Windows.Forms.TextBox();
             this.btnbuscarcn = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtidempc = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -273,12 +275,30 @@
             this.btnbuscarcn.UseVisualStyleBackColor = true;
             this.btnbuscarcn.Click += new System.EventHandler(this.btnbuscarcn_Click);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(13, 202);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(84, 13);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "ID del empleado";
+            // 
+            // txtidempc
+            // 
+            this.txtidempc.Location = new System.Drawing.Point(132, 199);
+            this.txtidempc.Name = "txtidempc";
+            this.txtidempc.Size = new System.Drawing.Size(100, 20);
+            this.txtidempc.TabIndex = 26;
+            // 
             // cabeceraactuali
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(762, 432);
+            this.Controls.Add(this.txtidempc);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.btnbuscarcn);
             this.Controls.Add(this.txtidcn);
             this.Controls.Add(this.label12);
@@ -306,6 +326,7 @@
             this.Controls.Add(this.label1);
             this.Name = "cabeceraactuali";
             this.Text = "cabeceraactuali";
+            this.Load += new System.EventHandler(this.cabeceraactuali_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,5 +359,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtidcn;
         private System.Windows.Forms.Button btnbuscarcn;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtidempc;
     }
 }
