@@ -137,6 +137,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(332, 19);
             this.label6.Name = "label6";
@@ -146,6 +147,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(335, 54);
             this.label7.Name = "label7";
@@ -155,6 +157,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(332, 91);
             this.label8.Name = "label8";
@@ -164,6 +167,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(332, 127);
             this.label9.Name = "label9";
@@ -173,6 +177,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(332, 165);
             this.label10.Name = "label10";
@@ -182,6 +187,7 @@
             // 
             // label11
             // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(335, 209);
             this.label11.Name = "label11";
@@ -191,6 +197,7 @@
             // 
             // txtsueldo
             // 
+            this.txtsueldo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtsueldo.Location = new System.Drawing.Point(434, 16);
             this.txtsueldo.Name = "txtsueldo";
             this.txtsueldo.Size = new System.Drawing.Size(100, 20);
@@ -198,6 +205,7 @@
             // 
             // txtdss
             // 
+            this.txtdss.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtdss.Location = new System.Drawing.Point(434, 88);
             this.txtdss.Name = "txtdss";
             this.txtdss.Size = new System.Drawing.Size(100, 20);
@@ -205,6 +213,7 @@
             // 
             // txtisr
             // 
+            this.txtisr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtisr.Location = new System.Drawing.Point(434, 47);
             this.txtisr.Name = "txtisr";
             this.txtisr.Size = new System.Drawing.Size(100, 20);
@@ -212,6 +221,7 @@
             // 
             // txtotros
             // 
+            this.txtotros.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtotros.Location = new System.Drawing.Point(434, 120);
             this.txtotros.Name = "txtotros";
             this.txtotros.Size = new System.Drawing.Size(100, 20);
@@ -219,6 +229,7 @@
             // 
             // txttdeducc
             // 
+            this.txttdeducc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txttdeducc.Location = new System.Drawing.Point(434, 158);
             this.txttdeducc.Name = "txttdeducc";
             this.txttdeducc.Size = new System.Drawing.Size(100, 20);
@@ -226,6 +237,7 @@
             // 
             // txtsneto
             // 
+            this.txtsneto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtsneto.Location = new System.Drawing.Point(434, 202);
             this.txtsneto.Name = "txtsneto";
             this.txtsneto.Size = new System.Drawing.Size(100, 20);
@@ -233,6 +245,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(16, 407);
             this.label12.Name = "label12";
@@ -243,6 +256,7 @@
             // 
             // txtidcn
             // 
+            this.txtidcn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtidcn.Location = new System.Drawing.Point(96, 404);
             this.txtidcn.Name = "txtidcn";
             this.txtidcn.Size = new System.Drawing.Size(100, 20);
@@ -250,6 +264,7 @@
             // 
             // btnbuscarcn
             // 
+            this.btnbuscarcn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnbuscarcn.Location = new System.Drawing.Point(202, 402);
             this.btnbuscarcn.Name = "btnbuscarcn";
             this.btnbuscarcn.Size = new System.Drawing.Size(75, 23);
@@ -262,6 +277,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(762, 432);
             this.Controls.Add(this.btnbuscarcn);
             this.Controls.Add(this.txtidcn);
