@@ -21,7 +21,7 @@ namespace crud
         {
 
             operaciones oper = new operaciones();
-            DataTable dgvdatos = oper.cosnsultaconresultado("select * from empleado inner join cargo where empleado_id = '" + txtdgid.Text + "' and Empleado_empleado_id = '" + txtdgid.Text + "'");
+            DataTable dgvdatos = oper.cosnsultaconresultado("select * from empleado inner join  cargo where empleado_id = '" + txtdgid.Text + "' and Empleado_empleado_id = '" + txtdgid.Text + "'");
 
             foreach (DataRow dr in dgvdatos.Rows)
 

@@ -25,10 +25,10 @@ namespace crud
         private void btnbuscarcn_Click(object sender, EventArgs e)
         {
             operaciones oper = new operaciones();
-            DataTable dgvdatos = oper.cosnsultaconresultado("select * from detalle_nomina inner join cabecera_nomina where detalle_id = '"+txtidcn.Text+"' and nomina_id = '"+txtidcn.Text+"' ");
+            DataTable dgvdatos = oper.cosnsultaconresultado("select * from detalle_nomina inner join cabecera_nomina,cargo where detalle_id = '"+txtidcn.Text+"' and nomina_id = '"+txtidcn.Text+"' and cargo_id = '"+txtidcn.Text+"' ");
             foreach(DataRow dr in dgvdatos.Rows)
             {
-                string idnomina,isr,tnomina,fecha_i,fecha_f,isrc,ddss,s_neto,t_otros,t_dedu;
+                string idnomina,isr,tnomina,fecha_i,fecha_f,isrc,ddss,s_neto,t_otros,t_dedu,sueld;
                 idnomina = dr["nomina_id"].ToString();
                 txtidn.Text = idnomina;
                 isr = dr["nombre_empresa"].ToString();
@@ -49,6 +49,8 @@ namespace crud
                 txtotros.Text = t_otros;
                 t_dedu = dr["total_deduc"].ToString();
                 txttdeducc.Text = t_dedu;
+                sueld = dr["sueldo"].ToString();
+                txtsueldo.Text = sueld;
 
 
             }
