@@ -75,7 +75,7 @@ namespace crud
             {
                 double sueldo;
                 double opereacionisr, operacionss,operacionesotros,texisr,texss,texotros,totalope,suelneto;
-                sueldo = Convert.ToInt32(txtsueldo.Text);
+                sueldo = Convert.ToDouble(txtsueldo.Text);
                 opereacionisr = sueldo * 0.12;
                 operacionss = sueldo * 0.04;
                 operacionesotros = sueldo * 0.02;
