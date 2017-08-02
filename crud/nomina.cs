@@ -73,7 +73,7 @@ namespace crud
         {
             try
             {
-                int sueldo;
+                double sueldo;
                 double opereacionisr, operacionss,operacionesotros,texisr,texss,texotros,totalope,suelneto;
                 sueldo = Convert.ToInt32(txtsueldo.Text);
                 opereacionisr = sueldo * 0.12;
@@ -82,9 +82,9 @@ namespace crud
                 txtisr.Text = opereacionisr.ToString();
                 txtdeducionss.Text = operacionss.ToString();
                 txtotros.Text = operacionesotros.ToString();
-                texisr = Convert.ToInt32(txtisr.Text);
-                texss = Convert.ToInt32(txtdeducionss.Text);
-                texotros = Convert.ToInt32(txtotros.Text);
+                texisr = Convert.ToDouble(txtisr.Text);
+                texss = Convert.ToDouble(txtdeducionss.Text);
+                texotros = Convert.ToDouble(txtotros.Text);
                 totalope = texisr + texss + texotros;
                 txtdeducciontt.Text = totalope.ToString();
                 suelneto = sueldo - totalope;
