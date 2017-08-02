@@ -44,6 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnimp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -220,12 +221,23 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Lo que quiere \r\nmostrar";
             // 
+            // btnimp
+            // 
+            this.btnimp.Location = new System.Drawing.Point(12, 425);
+            this.btnimp.Name = "btnimp";
+            this.btnimp.Size = new System.Drawing.Size(75, 23);
+            this.btnimp.TabIndex = 17;
+            this.btnimp.Text = "Imprimir";
+            this.btnimp.UseVisualStyleBackColor = true;
+            this.btnimp.Click += new System.EventHandler(this.btnimp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(891, 460);
+            this.Controls.Add(this.btnimp);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -269,6 +281,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnimp;
     }
 }
 

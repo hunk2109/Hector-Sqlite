@@ -158,5 +158,21 @@ namespace crud
             datos_generales f = new datos_generales();
             f.Show();
         }
+
+        private void btnimp_Click(object sender, EventArgs e)
+        {
+            operaciones oper = new operaciones();
+            DataSet ds = new DataSet();
+            
+            DataTable dt = oper.cosnsultaconresultado(" SELECT  * FROM empleado");
+            ds.Tables.Add(dt);
+
+            ds.WriteXml(@"C:\bdd\reporte.xml");
+
+            frm_visor f = new frm_visor("visor.rpt");
+            f.Show();
+        }
+
+
     }
 }
