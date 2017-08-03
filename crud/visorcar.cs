@@ -16,14 +16,14 @@ namespace crud {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class visor : ReportClass {
+    public class visorcar : ReportClass {
         
-        public visor() {
+        public visorcar() {
         }
         
         public override string ResourceName {
             get {
-                return "visor.rpt";
+                return "visorcar.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace crud {
         
         public override string FullResourceName {
             get {
-                return "crud.visor.rpt";
+                return "crud.visorcar.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace crud {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class Cachedvisor : Component, ICachedReport {
+    public class Cachedvisorcar : Component, ICachedReport {
         
-        public Cachedvisor() {
+        public Cachedvisorcar() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace crud {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            visor rpt = new visor();
+            visorcar rpt = new visorcar();
             rpt.Site = this.Site;
             return rpt;
         }

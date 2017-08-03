@@ -36,7 +36,7 @@ namespace crud
                 f.Show();
             }
 
-            else if(cmbtablas.Text == ("Cabecera Nomina"))
+            else if (cmbtablas.Text == ("Cabecera Nomina"))
             {
                 cabecera f = new cabecera();
                 f.Show();
@@ -48,32 +48,32 @@ namespace crud
             if (rdbid.Checked == true)
             {
                 operaciones oper = new operaciones();
-                dgvdatos.DataSource = oper.cosnsultaconresultado("select "+txtcondiocional.Text+"  from  empleado where empleado_id = '" + txtbuscar.Text + "'");
+                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where empleado_id = '" + txtbuscar.Text + "'");
             }
 
-            else if(rdbnombre.Checked == true)
+            else if (rdbnombre.Checked == true)
             {
                 operaciones oper = new operaciones();
                 dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where nombre = '" + txtbuscar.Text + "'");
             }
-            else if(rdbapellido.Checked == true)
+            else if (rdbapellido.Checked == true)
             {
                 operaciones oper = new operaciones();
                 dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where apellido = '" + txtbuscar.Text + "'");
             }
 
-            else if(rdbcedula.Checked == true)
+            else if (rdbcedula.Checked == true)
             {
                 operaciones oper = new operaciones();
                 dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where cedula = '" + txtbuscar.Text + "'");
             }
 
-            else if(rdbsexo.Checked == true)
+            else if (rdbsexo.Checked == true)
             {
                 operaciones oper = new operaciones();
                 dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where sexo = '" + txtbuscar.Text + "'");
             }
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -85,12 +85,12 @@ namespace crud
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void txtbuscar_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -101,20 +101,20 @@ namespace crud
                 dgvdatos.DataSource = oper.cosnsultaconresultado("select * from  empleado ");
             }
 
-            else if(cmbtablas.Text == "Cargo")
+            else if (cmbtablas.Text == "Cargo")
             {
                 operaciones oper = new operaciones();
                 dgvdatos.DataSource = oper.cosnsultaconresultado("select * from  cargo ");
 
             }
 
-            else if(cmbtablas.Text == "Detalles Nomina")
+            else if (cmbtablas.Text == "Detalles Nomina")
             {
                 operaciones oper = new operaciones();
                 dgvdatos.DataSource = oper.cosnsultaconresultado("select * from  detalle_nomina ");
             }
 
-            else if(cmbtablas.Text == "Cabecera Nomina")
+            else if (cmbtablas.Text == "Cabecera Nomina")
             {
                 operaciones oper = new operaciones();
                 dgvdatos.DataSource = oper.cosnsultaconresultado("select * from  cabecera_nomina ");
@@ -141,15 +141,15 @@ namespace crud
                 f.Show();
             }
 
-            else if( cmbtablas.Text == "Cabecera Nomina")
+            else if (cmbtablas.Text == "Cabecera Nomina")
             {
                 cabeceraactuali f = new cabeceraactuali();
                 f.Show();
 
             }
-            
 
-                
+
+
 
         }
 
@@ -161,16 +161,49 @@ namespace crud
 
         private void btnimp_Click(object sender, EventArgs e)
         {
-            operaciones oper = new operaciones();
-            DataSet ds = new DataSet();
-            
-            DataTable dt = oper.cosnsultaconresultado(" SELECT  * FROM empleado");
-            ds.Tables.Add(dt);
+            if (cmbtablas.Text == "Empleado")
+            {
 
-            ds.WriteXml(@"C:\bdd\reporte.xml");
+                operaciones oper = new operaciones();
+                DataSet ds = new DataSet();
 
-            frm_visor f = new frm_visor("visor.rpt");
-            f.Show();
+                DataTable dt = oper.cosnsultaconresultado(" SELECT * FROM empleado");
+                ds.Tables.Add(dt);
+
+                ds.WriteXml(@"C:\bdd\empleado.xml");
+
+                frm_visor f = new frm_visor("visornp.rpt");
+                f.Show();
+            }
+
+            else if(cmbtablas.Text == "Detalles Nomina")
+            {
+                operaciones oper = new operaciones();
+                DataSet ds = new DataSet();
+
+                DataTable dt = oper.cosnsultaconresultado(" SELECT * FROM detalle_nomina");
+                ds.Tables.Add(dt);
+
+                ds.WriteXml(@"C:\bdd\nomina.xml");
+
+                frm_visor f = new frm_visor("visordn.rpt");
+                f.Show();
+            }
+
+            else if (cmbtablas.Text == "Cargo")
+            {
+                operaciones oper = new operaciones();
+                DataSet ds = new DataSet();
+
+                DataTable dt = oper.cosnsultaconresultado(" SELECT * FROM cargo");
+                ds.Tables.Add(dt);
+
+                ds.WriteXml(@"C:\bdd\Cargo.xml");
+
+                frm_visor f = new frm_visor("visorcar.rpt");
+                f.Show();
+            }
+
         }
 
 
