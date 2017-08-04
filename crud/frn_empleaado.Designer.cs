@@ -44,6 +44,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtnacimiento = new System.Windows.Forms.TextBox();
             this.txtingreso = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnexam = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -178,11 +180,31 @@
             this.txtingreso.Size = new System.Drawing.Size(100, 20);
             this.txtingreso.TabIndex = 16;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(16, 275);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Imagen";
+            // 
+            // btnexam
+            // 
+            this.btnexam.Location = new System.Drawing.Point(64, 270);
+            this.btnexam.Name = "btnexam";
+            this.btnexam.Size = new System.Drawing.Size(75, 23);
+            this.btnexam.TabIndex = 18;
+            this.btnexam.Text = "Examinar";
+            this.btnexam.UseVisualStyleBackColor = true;
+            // 
             // frn_empleaado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(327, 433);
+            this.Controls.Add(this.btnexam);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.txtingreso);
             this.Controls.Add(this.txtnacimiento);
             this.Controls.Add(this.label7);
@@ -224,5 +246,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtnacimiento;
         private System.Windows.Forms.TextBox txtingreso;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnexam;
     }
 }

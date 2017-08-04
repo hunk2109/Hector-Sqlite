@@ -45,33 +45,41 @@ namespace crud
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
-            if (rdbid.Checked == true)
+            try
             {
-                operaciones oper = new operaciones();
-                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where empleado_id = '" + txtbuscar.Text + "'");
+                if (rdbid.Checked == true)
+                {
+                    operaciones oper = new operaciones();
+                    dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where empleado_id = '" + txtbuscar.Text + "'");
+                }
+
+                else if (rdbnombre.Checked == true)
+                {
+                    operaciones oper = new operaciones();
+                    dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where nombre = '" + txtbuscar.Text + "'");
+                }
+                else if (rdbapellido.Checked == true)
+                {
+                    operaciones oper = new operaciones();
+                    dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where apellido = '" + txtbuscar.Text + "'");
+                }
+
+                else if (rdbcedula.Checked == true)
+                {
+                    operaciones oper = new operaciones();
+                    dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where cedula = '" + txtbuscar.Text + "'");
+                }
+
+                else if (rdbsexo.Checked == true)
+                {
+                    operaciones oper = new operaciones();
+                    dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where sexo = '" + txtbuscar.Text + "'");
+                }
             }
 
-            else if (rdbnombre.Checked == true)
+            catch(Exception ex)
             {
-                operaciones oper = new operaciones();
-                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where nombre = '" + txtbuscar.Text + "'");
-            }
-            else if (rdbapellido.Checked == true)
-            {
-                operaciones oper = new operaciones();
-                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where apellido = '" + txtbuscar.Text + "'");
-            }
-
-            else if (rdbcedula.Checked == true)
-            {
-                operaciones oper = new operaciones();
-                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where cedula = '" + txtbuscar.Text + "'");
-            }
-
-            else if (rdbsexo.Checked == true)
-            {
-                operaciones oper = new operaciones();
-                dgvdatos.DataSource = oper.cosnsultaconresultado("select " + txtcondiocional.Text + "  from  empleado where sexo = '" + txtbuscar.Text + "'");
+                MessageBox.Show(ex.Message);
             }
 
         }
@@ -172,7 +180,7 @@ namespace crud
 
                 ds.WriteXml(@"C:\bdd\empleado.xml");
 
-                frm_visor f = new frm_visor("visornp.rpt");
+                frm_visor f = new frm_visor("visorempl.rpt");
                 f.Show();
             }
 
