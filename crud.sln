@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crud", "crud\crud.csproj", 
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador", "Instalador\Instalador.vdproj", "{B1171BA4-5F25-4C7C-A4B4-5D788AEFBA36}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Crudx64", "Crudx64\Crudx64.vdproj", "{0DEDFF25-A68E-4469-8218-C22ADB220750}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B1171BA4-5F25-4C7C-A4B4-5D788AEFBA36}.Debug|x64.ActiveCfg = Debug
 		{B1171BA4-5F25-4C7C-A4B4-5D788AEFBA36}.Release|Any CPU.ActiveCfg = Release
 		{B1171BA4-5F25-4C7C-A4B4-5D788AEFBA36}.Release|x64.ActiveCfg = Release
+		{0DEDFF25-A68E-4469-8218-C22ADB220750}.Debug|Any CPU.ActiveCfg = Debug
+		{0DEDFF25-A68E-4469-8218-C22ADB220750}.Debug|x64.ActiveCfg = Debug
+		{0DEDFF25-A68E-4469-8218-C22ADB220750}.Release|Any CPU.ActiveCfg = Release
+		{0DEDFF25-A68E-4469-8218-C22ADB220750}.Release|x64.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
