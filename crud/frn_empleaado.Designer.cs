@@ -34,7 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.texid = new System.Windows.Forms.TextBox();
             this.txtnom = new System.Windows.Forms.TextBox();
-            this.textape = new System.Windows.Forms.TextBox();
+            this.txtape = new System.Windows.Forms.TextBox();
             this.texsex = new System.Windows.Forms.TextBox();
             this.btnguardar = new System.Windows.Forms.Button();
             this.btnborrar = new System.Windows.Forms.Button();
@@ -46,6 +46,9 @@
             this.txtingreso = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btnexam = new System.Windows.Forms.Button();
+            this.txtfoto = new System.Windows.Forms.TextBox();
+            this.potoemp = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.potoemp)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -98,12 +101,12 @@
             this.txtnom.Size = new System.Drawing.Size(100, 20);
             this.txtnom.TabIndex = 5;
             // 
-            // textape
+            // txtape
             // 
-            this.textape.Location = new System.Drawing.Point(129, 73);
-            this.textape.Name = "textape";
-            this.textape.Size = new System.Drawing.Size(100, 20);
-            this.textape.TabIndex = 6;
+            this.txtape.Location = new System.Drawing.Point(129, 73);
+            this.txtape.Name = "txtape";
+            this.txtape.Size = new System.Drawing.Size(100, 20);
+            this.txtape.TabIndex = 6;
             // 
             // texsex
             // 
@@ -197,12 +200,31 @@
             this.btnexam.TabIndex = 18;
             this.btnexam.Text = "Examinar";
             this.btnexam.UseVisualStyleBackColor = true;
+            this.btnexam.Click += new System.EventHandler(this.btnexam_Click);
+            // 
+            // txtfoto
+            // 
+            this.txtfoto.Location = new System.Drawing.Point(145, 272);
+            this.txtfoto.Name = "txtfoto";
+            this.txtfoto.Size = new System.Drawing.Size(100, 20);
+            this.txtfoto.TabIndex = 19;
+            // 
+            // potoemp
+            // 
+            this.potoemp.Location = new System.Drawing.Point(312, 12);
+            this.potoemp.Name = "potoemp";
+            this.potoemp.Size = new System.Drawing.Size(210, 130);
+            this.potoemp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.potoemp.TabIndex = 20;
+            this.potoemp.TabStop = false;
             // 
             // frn_empleaado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(327, 433);
+            this.ClientSize = new System.Drawing.Size(583, 433);
+            this.Controls.Add(this.potoemp);
+            this.Controls.Add(this.txtfoto);
             this.Controls.Add(this.btnexam);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtingreso);
@@ -214,7 +236,7 @@
             this.Controls.Add(this.btnborrar);
             this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.texsex);
-            this.Controls.Add(this.textape);
+            this.Controls.Add(this.txtape);
             this.Controls.Add(this.txtnom);
             this.Controls.Add(this.texid);
             this.Controls.Add(this.label4);
@@ -223,6 +245,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frn_empleaado";
             this.Text = "frn_empleado";
+            ((System.ComponentModel.ISupportInitialize)(this.potoemp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,7 +259,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox texid;
         private System.Windows.Forms.TextBox txtnom;
-        private System.Windows.Forms.TextBox textape;
+        private System.Windows.Forms.TextBox txtape;
         private System.Windows.Forms.TextBox texsex;
         private System.Windows.Forms.Button btnguardar;
         private System.Windows.Forms.Button btnborrar;
@@ -248,5 +271,7 @@
         private System.Windows.Forms.TextBox txtingreso;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnexam;
+        public System.Windows.Forms.TextBox txtfoto;
+        public System.Windows.Forms.PictureBox potoemp;
     }
 }
