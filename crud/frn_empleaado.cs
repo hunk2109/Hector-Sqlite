@@ -33,9 +33,9 @@ namespace crud
                 string end = @"C:\bdd\" +txtape.Text+".jpg";
                 File.Copy(start, end);
             }
-                string photo = @"C:\bdd\'"+txtape.Text+"'.jpg";
+                string photo = txtape.Text;
                 operaciones oper = new operaciones();
-                oper.consultasinreaultado("insert into empleado(nombre,apellido,cedula,sexo,fecha_naci,fecha_ingr,foto) values('" + txtnom.Text + "','" + txtape.Text + "','" + txtcedula.Text + "','" + texsex.Text + "','" + txtnacimiento.Text + "','" + txtingreso.Text + "','" +photo+ "')");
+                oper.consultasinreaultado("insert into empleado(nombre,apellido,cedula,sexo,fecha_naci,fecha_ingr,foto) values('" + txtnom.Text + "','" + txtape.Text + "','" + txtcedula.Text + "','" + texsex.Text + "','" + txtnacimiento.Text + "','" + txtingreso.Text + "','"+photo+"')");
 
             }
             catch(Exception ex)
